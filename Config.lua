@@ -15,26 +15,10 @@ SKILL_TIME_OUT=2000
 NO_MOVING_TARGETS=false
 ADV_MOTION_CHECK=false
  
---------------------------------------------------
--- Alchemist automatic skills
---------------------------------------------------
--- Alche Auto Attacks: HP Range
-AAA_MinHP=100
-AAA_MaxHP=32000
--- Auto Cart Revolution (ACR_MinEnemies 0=disabled)
-ACR = {}
-ACR.MinSP=20
-ACR.MinEnemies=4
--- Auto Single Target (weapon based) Skill
-AST = {}
-AST.SkillID=0
-AST.MinSP=20
-AST.Level=5
--- Auto Aid Potion
-CAN_DETECT_NOPOT=false
+
 AAP = {}
 AAP.Mode=3
-AAP.HP_Perc=99
+AAP.HP_Perc=70
 AAP.Level=4
  
 --------------------------------------------------
