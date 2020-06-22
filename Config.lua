@@ -3,14 +3,14 @@
 --------------------------------------------------
 CIRCLE_ON_IDLE=1
 FOLLOW_AT_ONCE=0
-HELP_OWNER_1ST=true
-KILL_YOUR_ENEMIES_1ST=false
+HELP_OWNER_1ST=false
+KILL_YOUR_ENEMIES_1ST=true
 LONG_RANGE_SHOOTER=false
-BOLTS_ON_CHASE_ST=false
+BOLTS_ON_CHASE_ST=true
 HP_PERC_DANGER=20
-HP_PERC_SAFE2ATK=20
-OWNER_CLOSEDISTANCE=4
-TOO_FAR_TARGET=15
+HP_PERC_SAFE2ATK=40
+OWNER_CLOSEDISTANCE=2
+TOO_FAR_TARGET=14
 SKILL_TIME_OUT=2000
 NO_MOVING_TARGETS=false
 ADV_MOTION_CHECK=false
@@ -60,8 +60,16 @@ AS_VAN_BLES.Level=0
 -- Tact list: behaviour for each monster
 --------------------------------------------------
 DEFAULT_BEHA = BEHA_attack
-DEFAULT_WITH = WITH_slow_power
+DEFAULT_WITH = WITH_one_skill
 Tact = {}
+-- Ant hell 01
+Tact[1097] = {"Ant Egg", BEHA_attack, WITH_one_skill, 5, 0}
+Tact[1095] = {"Andre", BEHA_react, WITH_one_skill, 5, 0}
+Tact[1160] = {"Pierre", BEHA_react, WITH_one_skill, 5, 0}
+Tact[1105] = {"Deniro", BEHA_react, WITH_one_skill, 5, 0}
+Tact[1176] = {"Vitata", BEHA_react, WITH_one_skill, 5, 0}
+Tact[1121] = {"Giearth", BEHA_react, WITH_one_skill, 5, 0}
+-- Moskovia 01
 Tact[1880] = {"Wood Goblin", BEHA_react, WITH_one_skill, 5, 0}
 Tact[1261] = {"Wild Rose", BEHA_react, WITH_full_power, 5, 0}
 -- Orc Dungeon (lvl 50+ Settings)
@@ -78,11 +86,6 @@ Tact[1031] = {"Poporing", BEHA_react, WITH_one_skill, 5, 0}
 Tact[1242] = {"Marin", BEHA_react, WITH_no_skill, 5, 0}
 Tact[1113] = {"Drops", BEHA_attack, WITH_no_skill, 5, -1}
 Tact[1002] = {"Poring", BEHA_attack_last, WITH_no_skill, 5, -1}
--- Eggs
-Tact[1008] = {"Pupa", BEHA_attack_last, WITH_no_skill, 5, 0}
-Tact[1048] = {"Thief Bug Egg", BEHA_attack_last, WITH_no_skill, 5, 0}
-Tact[1047] = {"Peco Peco Egg", BEHA_attack_last, WITH_no_skill, 5, 0}
-Tact[1097] = {"Ant Egg", BEHA_attack_last, WITH_no_skill, 5, 0}
 -- Summoned Plants
 Tact[1555] = {"Sm. Parasite", BEHA_avoid, WITH_no_skill, 5, 0}
 Tact[1575] = {"Sm. Flora", BEHA_avoid, WITH_no_skill, 5, 0}
